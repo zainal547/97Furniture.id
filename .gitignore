@@ -1,0 +1,13 @@
+# Mengabaikan folder dependensi Node
+node_modules/
+
+# Mengabaikan folder hasil build (jika proses build dilakukan otomatis di server deploy)
+dist/
+
+# Mengabaikan file konfigurasi lokal atau data sensitif (seperti API key)
+.env
+.env.local
+
+# Mengabaikan file bawaan sistem operasi (opsional)
+.DS_Store
+Thumbs.db
