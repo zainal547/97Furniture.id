@@ -64,8 +64,14 @@
     <section id="home" class="relative min-h-screen flex items-center bg-slate-900 overflow-hidden">
     
       <div class="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1920" alt="97 Furniture Showroom" class="w-full h-full object-cover object-center transform scale-105 motion-safe:animate-pulse-slow">
-          <div class="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-white via-white/40 to-transparent z-10"></div>
+        <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=1600&auto=format&fit=crop" 
+            alt="97 Furniture Showroom" 
+            class="w-full h-full object-cover object-center transform scale-105 motion-safe:animate-pulse-slow">
+        
+            <!-- 1. OVERLAY GELAP MENYELURUH -->
+            <div class="absolute inset-0 bg-[#0b111c]/65 backdrop-blur-[1px] z-10"></div>
+
+        <div class="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-[#0b111c] via-[#0b111c]/40 to-transparent z-20"></div>
       </div>
 
       <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-16 w-full flex flex-col justify-center">
@@ -143,7 +149,7 @@
         <!-- Header Section -->
         <div class="mb-16">
           <span class="text-xs font-bold tracking-widest text-[#d97706] uppercase block mb-3">Why Choose Us</span>
-          <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight max-w-2xl leading-[1.15]">
+          <h2 class="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight max-w-2xl leading-[1.15]">
             Three pillars behind every piece we deliver.
           </h2>
         </div>
@@ -155,14 +161,14 @@
           <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:border-[#d97706] transition-all duration-300 flex flex-col items-start group">
             <!-- Kotak Ikon Penggaris -->
             <div class="w-12 h-12 bg-[#0f172a] group-hover:bg-[#d97706] rounded-xl flex items-center justify-center text-white mb-6">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 transition-colors duration-300 rounded">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21.3 8.11 15.89 2.7a1 1 0 0 0-1.41 0L2.7 14.48a1 1 0 0 0 0 1.41l5.41 5.41a1 1 0 0 0 1.41 0L21.3 9.52a1 1 0 0 0 0-1.41Z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="m16 7-1.5-1.5M13 10-1.5-1.5M10 13-1.5-1.5M7 16-1.5-1.5" />
+              <svg viewBox="-8.16 -8.16 40.32 40.32" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier"> <path d="M5.63604 14.1238L7.05026 15.538M8.46447 11.2953L9.87868 12.7096M11.2929 8.46691L12.7071 9.88113M14.1213 5.63849L15.5355 7.0527M2.80762 16.9522L7.05026 21.1948L21.1924 7.0527L16.9498 2.81006L2.80762 16.9522Z" stroke="#fff" stroke-width="0.8879999999999999" stroke-linecap="round" stroke-linejoin="round"></path> </g>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-slate-950 mb-3 tracking-tight">100% Custom Design</h3>
-            <p class="text-slate-600 text-sm leading-relaxed font-normal">
-              Every piece is tailored to your exact space, dimensions, and preferences — no compromise.
+            <h3 class="text-2xl font-semibold text-slate-950 mb-3 tracking-tight">100% Custom Design</h3>
+            <p class="text-slate-600 text-lg leading-relaxed font-normal">
+              Every piece is tailored to your exact space, dimensions, and personal style — no compromise.
             </p>
           </div>
 
@@ -174,8 +180,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 3h12l4 6-10 12L2 9z M11 3L8 9l4 12 4-12-3-6 M2 9h20" />
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-slate-950 mb-3 tracking-tight">Premium Materials</h3>
-            <p class="text-slate-600 text-sm leading-relaxed font-normal">
+            <h3 class="text-2xl font-semibold text-slate-950 mb-3 tracking-tight">Premium Materials</h3>
+            <p class="text-slate-600 text-lg leading-relaxed font-normal">
               Solid wood, marine-grade plywood, and top-tier finishes ensure your furniture lasts a lifetime.
             </p>
           </div>
@@ -184,14 +190,13 @@
           <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:border-[#d97706] transition-all duration-300 flex flex-col items-start group">
             <!-- Kotak Ikon Palu -->
             <div class="w-12 h-12 bg-[#0f172a] group-hover:bg-[#d97706] rounded-xl flex items-center justify-center text-white mb-6">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 transition-colors duration-300 rounded">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m15 12-8.5 8.5a2.12 2.12 0 1 1-3-3L12 9" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.23V5a2 2 0 0 0-2-2h-3a1 1 0 0 0-1 1v4c0 .82-.31 1.6-.85 2.15L10.8 12M17.64 15 22 10.64" />
+              <svg fill="#ffffff" viewBox="-20.72 -20.72 97.44 97.44" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00056"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                <path d="M 1.9205 50.6968 L 5.3687 54.1450 C 7.2673 56 9.4279 55.8472 11.3484 53.7303 L 34.1981 28.8511 C 35.1365 29.5058 36.0094 29.4840 37.0788 29.2658 L 39.4140 28.7856 L 40.9636 30.3351 L 40.8545 31.4918 C 40.7017 32.6921 41.0508 33.6087 42.1637 34.7217 L 43.9971 36.5331 C 45.1100 37.6679 46.5939 37.7334 47.6634 36.6640 L 54.9309 29.3967 C 56.0000 28.3273 55.9347 26.8651 54.8218 25.7303 L 52.9884 23.8971 C 51.8755 22.7840 50.9369 22.3912 49.7583 22.5658 L 48.5801 22.6967 L 47.0958 21.2127 L 47.7506 18.6593 C 48.0563 17.3936 47.7287 16.3678 46.3539 15.0147 L 40.9636 9.6461 C 33.0414 1.7677 22.8933 2.0077 15.9532 9.0132 C 14.9930 9.9734 14.9057 11.2829 15.5168 12.2431 C 16.0187 13.0724 17.0881 13.5744 18.5503 13.2034 C 21.9330 12.3522 25.3157 12.6141 28.6330 14.8620 L 27.2362 18.3975 C 26.7124 19.7069 26.7561 20.7762 27.2799 21.7583 L 2.3352 44.7171 C .2401 46.6594 0 48.7763 1.9205 50.6968 Z M 19.4233 9.8861 C 25.3812 5.4341 32.8013 6.1542 38.1700 11.5229 L 44.0404 17.3499 C 44.5643 17.8737 44.6300 18.2883 44.4771 18.9431 L 43.6480 22.4349 L 47.1615 25.9485 L 49.3002 25.7521 C 49.9331 25.6866 50.1293 25.7303 50.6531 26.2322 L 52.0284 27.6290 L 45.8957 33.7833 L 44.4990 32.3866 C 43.9971 31.8846 43.9533 31.6882 44.0190 31.0553 L 44.2152 28.8947 L 40.7236 25.4029 L 37.1006 26.1013 C 36.4677 26.2322 36.1404 26.2322 35.5948 25.6866 L 30.7499 20.8199 C 30.2261 20.2961 30.1606 19.9906 30.4443 19.2922 L 32.5831 14.1855 C 29.0040 10.7591 24.2682 8.8604 19.7070 10.3226 C 19.5106 10.3881 19.3796 10.3444 19.3142 10.2571 C 19.2487 10.1480 19.2487 10.0389 19.4233 9.8861 Z M 4.7576 49.1255 C 3.6446 48.0125 4.0374 47.3359 4.7794 46.6594 L 29.2877 24.0499 L 32.0156 26.7996 L 9.3406 51.2206 C 8.6641 51.9626 7.8130 52.1808 6.8964 51.2861 Z"></path></g>
               </svg>
             </div>
 
-            <h3 class="text-xl font-bold text-slate-950 mb-3 tracking-tight">Local Craftsmanship</h3>
-            <p class="text-slate-600 text-sm leading-relaxed font-normal">
+            <h3 class="text-2xl font-semibold text-slate-950 mb-3 tracking-tight">Local Craftsmanship</h3>
+            <p class="text-slate-600 text-lg leading-relaxed font-normal">
               Proudly handcrafted in South Tangerang by senior artisans with decades of precision.
             </p>
           </div>
@@ -649,7 +654,7 @@
           <!-- Google Maps -->
           <div class="lg:col-span-7 w-full h-100 sm:h-120 lg:h-130 rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m4!2s-6.344405!2m2!106.726885!4m2!3d-6.3444!4d106.7269!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid" 
+              src="https://maps.google.com/maps?q=Jl.%20Drs.%20SetiaBudi%20no%2007,%20Pamulang%20Barat,%20Tangerang%20Selatan&t=&z=16&ie=UTF8&iwloc=&output=embed" 
               class="w-full h-full border-0 grayscale-20 invert-10 contrast-110" 
               allowfullscreen="" 
               loading="lazy" 
@@ -685,27 +690,25 @@
           
               <a href="https://instagram.com" target="_blank" 
                 class="group w-9 h-9 rounded-full border border-slate-800 hover:border-[#d97706] hover:bg-[#d97706] flex items-center justify-center text-slate-400 hover:text-white transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-colors duration-300">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
+                <svg viewBox="-9.25 -9.25 43.50 43.50" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 5H9.5C7.29086 5 5.5 6.79086 5.5 9V15C5.5 17.2091 7.29086 19 9.5 19H15.5C17.7091 19 19.5 17.2091 19.5 15V9C19.5 6.79086 17.7091 5 15.5 5Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 15C10.8431 15 9.5 13.6569 9.5 12C9.5 10.3431 10.8431 9 12.5 9C14.1569 9 15.5 10.3431 15.5 12C15.5 12.7956 15.1839 13.5587 14.6213 14.1213C14.0587 14.6839 13.2956 15 12.5 15Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <rect x="15.5" y="9" width="2" height="2" rx="1" transform="rotate(-90 15.5 9)" fill="#fff"></rect> <rect x="16" y="8.5" width="1" height="1" rx="0.5" transform="rotate(-90 16 8.5)" stroke="#fff" stroke-linecap="round"></rect> </g>
                 </svg>
               </a>
 
               <a href="https://facebook.com" target="_blank" 
                 class="group w-9 h-9 rounded-full border border-slate-800 hover:border-[#d97706] hover:bg-[#d97706] flex items-center justify-center text-slate-400 hover:text-white transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-colors duration-300">
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg fill="#ffffff" viewBox="-11.84 -11.84 55.68 55.68" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                  <path d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"></path></g>
                 </svg>
               </a>
 
               <a href="https://linkedin.com" target="_blank" 
                 class="group w-9 h-9 rounded-full border border-slate-800 hover:border-[#d97706] hover:bg-[#d97706] flex items-center justify-center text-slate-400 hover:text-white transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-colors duration-300">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 8.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25h8.25A2.25 2.25 0 0 0 16.5 18v-2.25m-10.5-6h.008v.008H6V9.75Zm0 3h.008v.008H6v-.008Zm0 3h.008v.008H6v-.008Z" />
+                <svg fill="#ffffff" viewBox="-960 -960 3840.00 3840.00" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
+                  <path d="M1168 601.321v74.955c72.312-44.925 155.796-71.11 282.643-71.11 412.852 0 465.705 308.588 465.705 577.417v733.213L1438.991 1920v-701.261c0-117.718-42.162-140.06-120.12-140.06-74.114 0-120.12 23.423-120.12 140.06V1920l-483.604-4.204V601.32H1168Zm-687.52-.792v1318.918H0V600.53h480.48Zm-120.12 120.12H120.12v1078.678h240.24V720.65Zm687.52.792H835.267v1075.316l243.364 2.162v-580.18c0-226.427 150.51-260.18 240.24-260.18 109.55 0 240.24 45.165 240.24 260.18v580.18l237.117-2.162v-614.174c0-333.334-93.573-457.298-345.585-457.298-151.472 0-217.057 44.925-281.322 98.98l-16.696 14.173H1047.88V721.441ZM240.24 0c132.493 0 240.24 107.748 240.24 240.24 0 132.493-107.747 240.24-240.24 240.24C107.748 480.48 0 372.733 0 240.24 0 107.748 107.748 0 240.24 0Zm0 120.12c-66.186 0-120.12 53.934-120.12 120.12s53.934 120.12 120.12 120.12 120.12-53.934 120.12-120.12-53.934-120.12-120.12-120.12Z" fill-rule="evenodd"></path> </g>
                 </svg>
               </a>
             </div>
-
           </div>
 
           <div class="lg:col-span-3 space-y-4">
